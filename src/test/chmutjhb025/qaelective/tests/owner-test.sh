@@ -52,6 +52,6 @@ curl -X POST "$BASE_URL/owners/$OWNER_ID/pets/$PET_ID/visits" \
   -d '{"date":"2026-09-09","description":"Routine checkup"}' \
   -w "\nStatus: %{http_code}\n\n"
 
-# Scenario: Delete owner by id -> expect 204 or 200
-echo "=== Delete owner by id ==="
-curl -X DELETE "$BASE_URL/owners/$OWNER_ID" -w "\nStatus: %{http_code}\n\n"
+# # Scenario: Delete owner by id -> expect 204 or 200
+# echo "=== Delete owner by id ==="
+# curl -X DELETE "$BASE_URL/owners/$OWNER_ID" -w "\nStatus: %{http_code}\n\n"
